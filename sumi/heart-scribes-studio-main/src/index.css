@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 50% 96%;
+    --foreground: 350 30% 20%;
+
+    --card: 30 40% 94%;
+    --card-foreground: 350 30% 20%;
+
+    --popover: 30 50% 96%;
+    --popover-foreground: 350 30% 20%;
+
+    --primary: 350 60% 55%;
+    --primary-foreground: 30 50% 96%;
+
+    --secondary: 30 30% 88%;
+    --secondary-foreground: 350 30% 25%;
+
+    --muted: 30 20% 90%;
+    --muted-foreground: 350 15% 45%;
+
+    --accent: 38 70% 60%;
+    --accent-foreground: 350 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 30% 85%;
+    --input: 30 30% 85%;
+    --ring: 350 60% 55%;
+
+    --radius: 0.75rem;
+
+    --love-rose: 350 60% 55%;
+    --love-blush: 350 40% 75%;
+    --love-cream: 30 50% 96%;
+    --love-gold: 38 70% 60%;
+    --love-deep: 350 45% 30%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Lora', serif;
+    --font-script: 'Dancing Script', cursive;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
